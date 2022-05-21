@@ -1,0 +1,22 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /resource-server-jwt
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+#          issuer-uri: https://dev2-pub-mim-ar.mitrol.net/auth/realms/mitrol
+          jwk-set-uri: https://dev2-pub-mim-ar.mitrol.net/auth/realms/mitrol/protocol/openid-connect/certs
+
+#spring:
+#  security:
+#    oauth2:
+#      resourceserver:
+#        opaque:
+#          introspection-uri: https://dev2-pub-mim-ar.mitrol.net/auth/realms/mitrol
+#          introspection-client-id: webpad-3-service
+#          introspection-client-secret: e1363705-7a9c-42e1-a4f2-2020a24e2916
+
